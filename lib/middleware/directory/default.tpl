@@ -38,11 +38,11 @@ td{padding: 8px 12px 0 12px;}
   </tbody>
 </table>
 <script>
-(function(global, undefined) {
++function(global, undefined) {
   setTimeout(function() {
     document.body.style.opacity = 1;
   }, 16);
-})(this)
+}(this);
 </script>
 </body>
 </html>
