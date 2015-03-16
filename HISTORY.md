@@ -1,3 +1,21 @@
+1.0.0 / 2015-3-15
+==================
+
+  * Add plugin function in package.json
+  * Bugfix unknow mime type
+
+0.6.40 / 2015-2-11
+==================
+
+  * Support optional index router
+  * Bugfix markdown render
+
+0.6.36 / 2015-1-30
+==================
+
+  * Support respose certification
+  * Add X-Powered-By to header
+
 0.5.26 / 2014-10-18
 ===================
 
@@ -13,3 +31,8 @@
 ===================
 
   * Beautify Slider style
+
+0.1.0  / 2014-06-03
+===================
+
+  * First Commit

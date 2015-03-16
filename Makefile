@@ -19,7 +19,6 @@ test: install build
 	@node --harmony \
 		node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha \
 		-- \
-		--reporter spec \
 		--timeout 10000 \
 		--require co-mocha
 travis: install
@@ -27,4 +26,6 @@ travis: install
 		./node_modules/.bin/_mocha \
 		--report lcovonly \
 		-- -t 20000 -r should-http test/*.test.js
+jshint:
+	@./node_modules/jshint/bin/jshint .
 .PHONY: test

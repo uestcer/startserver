@@ -1,5 +1,5 @@
 startserver
-===
+===========
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -18,29 +18,111 @@ startserver
 [download-image]: https://img.shields.io/npm/dm/startserver.svg?style=flat-square
 [download-url]: https://npmjs.org/package/startserver
 
-> A simple http server and be more easy to generate a slider.
+> Yet another http server.
 
-## Installment
+## Installation
 
-```bash
+### Node requirement
+
+\>= 0.10.x
+
+### Install from npm
+
+``` bash
 $ npm i startserver -g
 ```
 
+Use it for generator support, add this alias to your `.bash_profile`:
+
+```
+alias node='node --harmony'
+```
+
+Or you'd better use [io.js](https://iojs.org/cn/index.html) as an alternative.
+
 ## Quick Start
 
-```bash
+``` bash
 $ startserver
-$ start
-$ server
+```
+
+It also can be use it like this:
+
+``` base
+$ startserver 6789
+```
+
+There are more shorter alias for it:
+
+``` base
 $ ss
 ```
 
+## Features
+
+### Server Everywhere
+
+Run it at every directory under the root.
+
+  * Automatic detection of unoccupied port.
+
+### Slider Revolution
+
+Generate slider with `README.md` file or other markdown file.
+
+  * Suppor a inverse color style.
+  * Double click for temporary modifications, again to restore.
+  * Normal to read makedown.
+  * Highlight for your code block.
+  * Thumbnail mode provided.
+
+### Others
+
+  * Generator support and compatible runtime.
+  * Original javascript source code.
+
+## Commands
+
+#### plugins
+
+show plugin list
+
+#### generate
+
+``` bash
+$ startsever generate README.md
+```
+generate static slide file to markdown [[sample]](https://rawgit.com/xudafeng/startserver/master/README.md.html)
+
+## Plugins
+
+![logo](https://avatars3.githubusercontent.com/u/9607546?v=3&s=100)
+
+[plugins list](https://github.com/startserver)
+
+## Options
+
+#### -s, --silent
+
+start http server without opening browser
+
+#### -p, --port
+
+port to use (8080 default)
+
+#### -d, --disable
+
+disable default index router
+
+#### -v, --version
+
+output version infomation
+
 ## Help
 
-```bash
+``` bash
 $ startserver -h
 ```
-
 ## License
 
 The MIT License (MIT)
